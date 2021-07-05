@@ -129,3 +129,6 @@ const handleClick = React.useCallback(
 handleClick() // 실제 count 값: 0, 출력 결과: current count :0
 setCount(count + 1) // 실제 count 값: 1
 handleClick() // 실제 count 값: 1, 출력 결과: current count :1
+
+
+//결론 memo와 callback은 거의 비슷하나 memo는 상태값을 반환하고 callback은 함수를 반환한다. 차이점을 잘 기억하고 렌더링을 최적화 하자.
