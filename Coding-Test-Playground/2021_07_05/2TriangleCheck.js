@@ -33,4 +33,6 @@ function solution(a, b, c) {
 	return answer
 }
 
+//풀이 : 맨 하단의 if문에서 sum - max가 max와 같거나 max보다 작다면 삼각형 성립의 공식이 이루어지지 않기 때문에 ,
+// answer을 no로 출력하면 된다.
 console.log(solution(24, 210, 107))
