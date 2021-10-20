@@ -24,4 +24,7 @@
 
   type JSON = 'json'
   const josn: JSON = 'json'
+
+  type Boal = true
+  let test: Boal = true
 }

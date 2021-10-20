@@ -2,8 +2,8 @@
   // JS Remind
 
   //   old : var 호이스팅 등 여러 문제가 발생할 수 있다.
-  var age = 5
-  age = 1
+  var age1 = 5
+  age1 = 1
 
   // let es6
   let name = 'hello'
@@ -12,7 +12,7 @@
   // const
   const age = 5
   //다시 쓰기가 불가능하다.
-  age = 5
+  age = 4
 
   // Primitive : number ,string , boolean, bigint, symbol, null, undefined
   // Object : funtion, array ...
