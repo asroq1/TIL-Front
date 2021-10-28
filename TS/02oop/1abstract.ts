@@ -36,12 +36,12 @@
       return new CoffeeMachine(coffeeBeans)
     }
 
-    grindBeans(shots: number) {
+    private grindBeans(shots: number) {
       console.log(`grinding beans for ${shots}`)
 
-      if (this.coffeeBeansGram < shots * CoffeeMachine.BEANS_GRAM_PER_SHOT) {
-        throw new Error('not enough coffee beans ! ')
-      }
+      //   if (this.coffeeBeansGram < shots * CoffeeMachine.BEANS_GRAM_PER_SHOT) {
+      //     throw new Error('not enough coffee beans ! ')
+      //   }
 
       this.coffeeBeansGram -= shots * CoffeeMachine.BEANS_GRAM_PER_SHOT
     }
@@ -69,11 +69,6 @@
     }
   }
 
-  // interface를 한 개 더 추가함으로서 얻을 수 있는 이득이다.
-  const maker2: CommericalCoffeeMaker = CoffeeMachine.makeMachine(2)
-  maker2.fillBeans(40)
-  maker2.makeCoffee(4)
-
   class AmatureUser {
     constructor(private machine: CoffeeMaker) {}
     makeCoffee() {
@@ -87,7 +82,7 @@
     makeCoffee() {
       const coffee = this.machine.makeCoffee(2)
       console.log(coffee)
-      this.machine.fillBeans(2000)
+      this.machine.fillBeans(45)
       this.machine.clean()
     }
   }
